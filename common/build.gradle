@@ -10,7 +10,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -27,8 +26,14 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'org.jetbrains:annotations-java5:15.0'
+    api 'com.android.support:support-v4:27.1.1'
+    //View注入框架
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //列表控件
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    //图片加载
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    //日志框架
+    implementation 'com.orhanobut:logger:2.2.0'
 }
