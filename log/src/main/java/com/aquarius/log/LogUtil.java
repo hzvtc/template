@@ -1,18 +1,15 @@
-package com.aquarius.common.log;
+package com.aquarius.log;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.HandlerThread;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import com.aquarius.common.util.SDCardUtils;
+import com.aquarius.utils.SDCardUtils;
 import com.orhanobut.logger.DiskLogStrategy;
 import com.orhanobut.logger.LogStrategy;
 
 public class LogUtil {
     private static final int MAX_BYTES = 500 * 1024; // 500K averages to a 4000 lines per file
-    @NonNull
-    static <T> T checkNotNull(@Nullable final T obj) {
+    static <T> T checkNotNull(final T obj) {
         if (obj == null) {
             throw new NullPointerException();
         }

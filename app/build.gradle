@@ -21,7 +21,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    //日志框架
-    implementation 'com.orhanobut:logger:2.2.0'
     implementation project(':common')
+    implementation project(':log')
 }

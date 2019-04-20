@@ -8,8 +8,7 @@ import android.view.View;
 import com.aquarius.common.R;
 
 /**
- * 点击长按事件监听的实现
- * 点击同一个item 同时点击多个添加控制
+ * 适用于整个item的点击事件
  */
 
 public class OnRecyclerItemClickListener implements RecyclerView.OnItemTouchListener {

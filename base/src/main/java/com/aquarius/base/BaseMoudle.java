@@ -1,4 +1,4 @@
-package com.aquarius.common.base;
+package com.aquarius.base;
 
 import android.content.Context;
 

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-import com.orhanobut.logger.Logger;
+import com.aquarius.log.MLog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Logger.d("hello");
+        MLog.d("MainActivity","hello");
     }
 
     @Override
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         switch (i) {
             //
             case R.id.one:
-                Toast.makeText(this, "one", Toast.LENGTH_SHORT).show();
+                MLog.d("MainActivity","hello");
                 break;
             //
             case R.id.two:

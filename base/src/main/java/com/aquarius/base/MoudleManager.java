@@ -1,8 +1,6 @@
-package com.aquarius.common.util;
+package com.aquarius.base;
 
-import android.app.Activity;
 import android.content.Context;
-import com.aquarius.common.base.BaseMoudle;
 
 import java.util.ArrayList;
 

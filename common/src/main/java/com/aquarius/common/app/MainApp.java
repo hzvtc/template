@@ -1,9 +1,9 @@
 package com.aquarius.common.app;
 
 import android.app.Application;
+import com.aquarius.base.MoudleManager;
 import com.aquarius.common.moudle.FrescoMoudle;
-import com.aquarius.common.moudle.LoggerMoudle;
-import com.aquarius.common.util.MoudleManager;
+import com.aquarius.log.moudle.LoggerMoudle;
 
 public class MainApp extends Application {
     @Override
